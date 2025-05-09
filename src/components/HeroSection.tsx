@@ -19,10 +19,6 @@ const HeroSection: React.FC = () => {
             <Button className="w-full bg-minecraft-gold hover:bg-minecraft-gold/80 text-minecraft-obsidian font-minecraft text-lg py-6 border-b-4 border-yellow-600">
               Купить проходку за 5 ₽
             </Button>
-
-            <p className="text-white/80 mt-4 font-minecraft text-sm">
-              Более 10,000 игроков уже на сервере!
-            </p>
           </div>
 
           <div className="animate-minecraft-float mt-12">

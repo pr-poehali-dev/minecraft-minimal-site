@@ -66,9 +66,6 @@ const PrivilegeSection: React.FC = () => {
               * Проходка даёт постоянный доступ к серверу без дополнительных
               платежей
             </p>
-            <p className="font-minecraft text-sm text-gray-600 mt-1">
-              * Более 10,000 игроков уже на сервере
-            </p>
           </div>
         </div>
       </div>
