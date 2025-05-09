@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -73,7 +72,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -112,37 +111,103 @@
 }
 
 .text-minecraft-gold {
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .text-minecraft-diamond {
-  color: #4EB1BA;
+  color: #4eb1ba;
 }
 
 .text-minecraft-redstone {
-  color: #FF3D00;
+  color: #ff3d00;
 }
 
 .bg-minecraft-gold {
-  background-color: #FFD700;
+  background-color: #ffd700;
 }
 
 .bg-minecraft-diamond {
-  background-color: #4EB1BA;
+  background-color: #4eb1ba;
 }
 
 .bg-minecraft-redstone {
-  background-color: #FF3D00;
+  background-color: #ff3d00;
 }
 
 .border-minecraft-gold {
-  border-color: #FFD700;
+  border-color: #ffd700;
 }
 
 .border-minecraft-diamond {
-  border-color: #4EB1BA;
+  border-color: #4eb1ba;
 }
 
 .border-minecraft-redstone {
-  border-color: #FF3D00;
+  border-color: #ff3d00;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes minecraft-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-minecraft-float {
+  animation: minecraft-float 3s ease-in-out infinite;
+}
+
+/* Minecraft colors */
+.bg-minecraft-dirt {
+  background-color: #8b5a2b;
+}
+
+.bg-minecraft-stone {
+  background-color: #7f7f7f;
+}
+
+.bg-minecraft-obsidian {
+  background-color: #1e1e1e;
+}
+
+.bg-minecraft-gold {
+  background-color: #ffd700;
+}
+
+.text-minecraft-gold {
+  color: #ffd700;
+}
+
+.border-minecraft-gold {
+  border-color: #ffd700;
+}
+
+.border-minecraft-stone {
+  border-color: #7f7f7f;
+}
+
+/* Minecraft font */
+.font-minecraft {
+  font-family: "VT323", monospace;
+  letter-spacing: 0.5px;
 }
